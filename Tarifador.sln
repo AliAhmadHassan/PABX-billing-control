@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarifador.ImportaBilhetagem", "Tarifador.ImportaBilhetagem\Tarifador.ImportaBilhetagem.csproj", "{A00E2149-0955-47F1-A2CF-5AB2737FB24E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarifador.DTO", "Tarifador.DTO\Tarifador.DTO.csproj", "{8D4A9EE8-97C9-48C1-8728-8B397FB73AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarifador.BLL", "Tarifador.BLL\Tarifador.BLL.csproj", "{5D4ACB1E-D6A6-4C8D-88F7-C970D6ADF8E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarifador.DAL", "Tarifador.DAL\Tarifador.DAL.csproj", "{BB5DD050-8AE9-473E-82E2-1121C2AE96C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConciliaContas", "ConciliaContas\ConciliaContas.csproj", "{5459785A-E634-409C-B346-345D39D1A9AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A00E2149-0955-47F1-A2CF-5AB2737FB24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00E2149-0955-47F1-A2CF-5AB2737FB24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00E2149-0955-47F1-A2CF-5AB2737FB24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00E2149-0955-47F1-A2CF-5AB2737FB24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4A9EE8-97C9-48C1-8728-8B397FB73AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4A9EE8-97C9-48C1-8728-8B397FB73AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4A9EE8-97C9-48C1-8728-8B397FB73AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4A9EE8-97C9-48C1-8728-8B397FB73AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4ACB1E-D6A6-4C8D-88F7-C970D6ADF8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4ACB1E-D6A6-4C8D-88F7-C970D6ADF8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4ACB1E-D6A6-4C8D-88F7-C970D6ADF8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4ACB1E-D6A6-4C8D-88F7-C970D6ADF8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5DD050-8AE9-473E-82E2-1121C2AE96C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5DD050-8AE9-473E-82E2-1121C2AE96C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5DD050-8AE9-473E-82E2-1121C2AE96C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5DD050-8AE9-473E-82E2-1121C2AE96C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5459785A-E634-409C-B346-345D39D1A9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5459785A-E634-409C-B346-345D39D1A9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5459785A-E634-409C-B346-345D39D1A9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5459785A-E634-409C-B346-345D39D1A9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

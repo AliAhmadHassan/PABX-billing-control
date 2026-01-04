@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D4ACB1E-D6A6-4C8D-88F7-C970D6ADF8E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tarifador.BLL</RootNamespace>
+    <AssemblyName>Tarifador.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IBase.cs" />
+    <Compile Include="Abstract\IBilhete.cs" />
+    <Compile Include="Abstract\ICadencia.cs" />
+    <Compile Include="Abstract\ICampanha.cs" />
+    <Compile Include="Abstract\ICarteira.cs" />
+    <Compile Include="Abstract\IDiscador.cs" />
+    <Compile Include="Abstract\ILigacaoStatus.cs" />
+    <Compile Include="Abstract\ILink.cs" />
+    <Compile Include="Abstract\IOperadora.cs" />
+    <Compile Include="Abstract\ITarifa.cs" />
+    <Compile Include="Bilhete.cs" />
+    <Compile Include="Cadencia.cs" />
+    <Compile Include="calculo.cs" />
+    <Compile Include="Campanha.cs" />
+    <Compile Include="Carteira.cs" />
+    <Compile Include="Discador.cs" />
+    <Compile Include="Gennex\CDR.cs" />
+    <Compile Include="LigacaoStatus.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="Operadora.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tarifa.cs" />
+    <Compile Include="TotalIP\ligacoes_ativo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tarifador.DAL\Tarifador.DAL.csproj">
+      <Project>{bb5dd050-8ae9-473e-82e2-1121c2ae96c7}</Project>
+      <Name>Tarifador.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tarifador.DTO\Tarifador.DTO.csproj">
+      <Project>{8d4a9ee8-97c9-48c1-8728-8b397fb73af9}</Project>
+      <Name>Tarifador.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
